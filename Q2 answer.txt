@@ -1,0 +1,64 @@
+[Q2a] To create a VM instance with the specified settings on Oracle VM VirtualBox, you can follow these steps:
+
+1.Open Oracle VM VirtualBox and click on the "New" button on the top left corner of the window.
+2.In the "Name and operating system" window, give a name to your virtual machine and select the operating system you want to install.
+3.In the "Memory size" window, choose the amount of primary memory you want to allocate to your virtual machine (4/8 GB in your case).
+4.In the "Hard disk" window, choose "Create a virtual hard disk now" and select "VDI" as the file type.
+5.In the "File location and size" window, choose the amount of secondary memory you want to allocate to your virtual machine (70 GB in your case) and click on "Create" to create the virtual hard disk.
+6.Finally, click on "Create" to create the virtual machine with the specified settings
+
+
+
+[Q2B]
+1]Open the terminal in your VM instance and run the following command to install Docker:
+	sudo apt-get update
+	sudo apt-get install docker.io
+
+2]Once Docker is installed, you can create a Docker image for Python/Java by creating a Dockerfile in a directory and running the following commands:
+	
+	# Dockerfile for Python
+	FROM python:3
+	COPY . /app		
+	WORKDIR /app
+	CMD python main.py
+
+	# Dockerfile for Java
+	FROM openjdk:11
+	COPY . /app
+	WORKDIR /app
+	RUN javac Main.java
+	CMD java Main
+
+
+3]In the directory where the Dockerfile is located, run the following command to build the Docker image:
+
+	docker build -t my-python-image 
+
+OR	docker build -t my-java-image .
+
+4]Create a small program to show your prn number on this. Here's an example Python program:
+
+	# main.py
+
+	print("PRN: 1234567890")
+
+5]Run the Docker image with the following command:
+	
+	docker run my-python-image
+
+
+[Q2c]
+
+1]Tag the Docker image with the registry name using the following command:
+
+	docker tag my-python-image my-registry.com/my-python-image
+
+2]Log in to the registry using the following command:
+	
+	docker login my-registry.com
+
+3]Push the Docker image to the registry using the following command:
+
+	docker push my-registry.com/my-python-image
+
+

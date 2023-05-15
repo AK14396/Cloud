@@ -1,0 +1,74 @@
+[Q1]
+a) Creating an Amazon EC2 Instance:
+
+1.Login to your AWS console and go to the EC2 service.
+
+2.Click on the "Launch Instance" button to begin creating a new instance.
+
+3.Choose the AMI (Amazon Machine Image) that you want to use for your instance. In this case, we will use the "Amazon Linux 2 AMI."
+
+4.Select the instance type you want to launch. For this example, we will choose the "t2.micro" instance type.
+
+5.Configure the instance details, such as the number of instances you want to launch and the VPC settings.
+
+6.Add storage to your instance by choosing the size and type of storage you want to use.
+
+7.Configure the security group settings for your instance to specify which traffic can be allowed to reach your instance.
+
+8.Review your instance launch details and click "Launch" to start the instance.
+
+9.Select an existing key pair or create a new one to access your instance. Make sure to download the private key file and keep it safe.
+
+10.Wait for the instance to launch and then connect to it using SSH.
+
+
+[Q1] 
+b) Creating a GitHub Repo:
+
+1.Login to your GitHub account and create a new repository.
+
+2.Name the repository with your name and PRN number (for example, "johndoe-1234567").
+
+3.Choose the settings for the repository, such as the license and visibility.
+
+4.Clone the repository to your local machine using the Git CLI.
+
+5.Create a new file in the repository with a Python or Java code to print your name and PRN number.
+
+6.Add and commit the changes to the repository using the Git CLI.
+
+7.Push the changes to the remote repository on GitHub.
+
+8.Share the link to your GitHub repository.
+
+
+step1
+git clone https://github.com/<username>/<repository_name>.git
+
+
+
+step2
+print("My name is [YOUR NAME] and my PRN is [YOUR PRN].")
+
+
+step3
+git add <filename>
+git commit -m "Added code to print name and PRN"
+
+
+step4
+git push origin main
+
+
+
+step 5
+Your GitHub repository link should be in the format "https://github
+
+
+
+
+
+
+
+
+

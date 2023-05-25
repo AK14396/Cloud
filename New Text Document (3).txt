@@ -1,0 +1,12 @@
+Question 1:
+a) create an amazon ec2 instance. write steps & attach screenshots for ever step.
+b)create a github repo with your name-<prn> & share steps as well as repo link.
+c)clone this repo to your local machine. create a python/java code to print your name & prn number. push this code to the same repo from your local repo. share your latest commit number.
+
+Question 2:
+a)create a vm instance of your choice with default settings o vmware virtual box or on oracle vm boxbox with below settings
+	1.- primary memory:4/8 GB
+	2.- swcondary memory:70 GB
+b)install docker on VM created in question 2.1. create a docker image for python/java.create a small program to show your prn number on this. attach screenshot for code & output.
+c) push the docker image created in question2.b.
+d)list all the docker images & container created in question2.b & question 2.c, share all steps, & highlight steps in screenshots.
